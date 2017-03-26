@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		8814E37CC6AD8BF348340849 /* Pods_hackcity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086168003AF12F57D7C4BD8A /* Pods_hackcity.framework */; };
 		BBDDC14E1E873F21004F70EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC14D1E873F21004F70EE /* AppDelegate.swift */; };
-		BBDDC1501E873F21004F70EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC14F1E873F21004F70EE /* ViewController.swift */; };
 		BBDDC1531E873F21004F70EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDDC1511E873F21004F70EE /* Main.storyboard */; };
 		BBDDC1551E873F21004F70EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBDDC1541E873F21004F70EE /* Assets.xcassets */; };
 		BBDDC1581E873F21004F70EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDDC1561E873F21004F70EE /* LaunchScreen.storyboard */; };
+		BBDDC1601E874D22004F70EE /* SignId.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDDC15F1E874D22004F70EE /* SignId.storyboard */; };
+		BBDDC1631E874D68004F70EE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC1621E874D68004F70EE /* MainViewController.swift */; };
+		BBDDC1651E874D6E004F70EE /* SignIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC1641E874D6E004F70EE /* SignIdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +22,13 @@
 		91538C09C8A590CBB68337AB /* Pods-hackcity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackcity.release.xcconfig"; path = "Pods/Target Support Files/Pods-hackcity/Pods-hackcity.release.xcconfig"; sourceTree = "<group>"; };
 		BBDDC14A1E873F21004F70EE /* hackcity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackcity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBDDC14D1E873F21004F70EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BBDDC14F1E873F21004F70EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BBDDC1521E873F21004F70EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBDDC1541E873F21004F70EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBDDC1571E873F21004F70EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBDDC1591E873F21004F70EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBDDC15F1E874D22004F70EE /* SignId.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignId.storyboard; sourceTree = "<group>"; };
+		BBDDC1621E874D68004F70EE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BBDDC1641E874D6E004F70EE /* SignIdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIdViewController.swift; sourceTree = "<group>"; };
 		BEE0F17D9A29372148B7CEC4 /* Pods-hackcity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackcity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackcity/Pods-hackcity.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,14 +73,48 @@
 		BBDDC14C1E873F21004F70EE /* hackcity */ = {
 			isa = PBXGroup;
 			children = (
+				BBDDC1661E874D73004F70EE /* AppDelegate */,
+				BBDDC1611E874D52004F70EE /* ViewControllers */,
+				BBDDC1671E874D7D004F70EE /* Storyboards */,
+				BBDDC1681E874D86004F70EE /* Ressources */,
+			);
+			path = hackcity;
+			sourceTree = "<group>";
+		};
+		BBDDC1611E874D52004F70EE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDC1621E874D68004F70EE /* MainViewController.swift */,
+				BBDDC1641E874D6E004F70EE /* SignIdViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BBDDC1661E874D73004F70EE /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
 				BBDDC14D1E873F21004F70EE /* AppDelegate.swift */,
-				BBDDC14F1E873F21004F70EE /* ViewController.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BBDDC1671E874D7D004F70EE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				BBDDC1511E873F21004F70EE /* Main.storyboard */,
+				BBDDC15F1E874D22004F70EE /* SignId.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		BBDDC1681E874D86004F70EE /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
 				BBDDC1541E873F21004F70EE /* Assets.xcassets */,
 				BBDDC1561E873F21004F70EE /* LaunchScreen.storyboard */,
 				BBDDC1591E873F21004F70EE /* Info.plist */,
 			);
-			path = hackcity;
+			name = Ressources;
 			sourceTree = "<group>";
 		};
 		EDC41FEA9173037E722FB8FE /* Pods */ = {
@@ -153,6 +191,7 @@
 			files = (
 				BBDDC1581E873F21004F70EE /* LaunchScreen.storyboard in Resources */,
 				BBDDC1551E873F21004F70EE /* Assets.xcassets in Resources */,
+				BBDDC1601E874D22004F70EE /* SignId.storyboard in Resources */,
 				BBDDC1531E873F21004F70EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBDDC1501E873F21004F70EE /* ViewController.swift in Sources */,
 				BBDDC14E1E873F21004F70EE /* AppDelegate.swift in Sources */,
+				BBDDC1651E874D6E004F70EE /* SignIdViewController.swift in Sources */,
+				BBDDC1631E874D68004F70EE /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +419,7 @@
 				BBDDC15E1E873F21004F70EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
