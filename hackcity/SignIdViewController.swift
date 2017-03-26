@@ -10,13 +10,11 @@ import UIKit
 import Alamofire
 
 class SignIdViewController: UIViewController {
-
+    
     @IBOutlet weak var inputIDField: UITextField!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
     }
     
     @IBAction func connect(_ sender: Any) {
@@ -44,9 +42,9 @@ class SignIdViewController: UIViewController {
                 case .success:
                     print("Validation Successful")
                     DispatchQueue.main.async {
-                        self.dismiss(animated: true, completion: nil)                        
+                        self.dismiss(animated: true, completion: nil)
                     }
-
+                    
                     
                 case .failure(let error):
                     print(error)
@@ -62,14 +60,4 @@ class SignIdViewController: UIViewController {
             })
         }
     }
-    
 }
-
-
-
-
-
-
-
-
-

@@ -10,6 +10,8 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    let viewmodel = MainViewModel()
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.performSegue(withIdentifier: "mainviewmodal", sender: nil)
@@ -18,15 +20,25 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.viewmodel.delegate = self
+        self.viewmodel.startConnect()
+    }
+}
 
-        
-        // Do any additional setup after loading the view.
+extension MainViewController: MainViewModelDelegate {
+    func didConnectServer() {
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func didDisconnectServer() {
+
     }
 
+    func didMoveStart() {
+        self.view.backgroundColor = UIColor.green
+    }
 
+    func didMoveEnd() {
+        self.view.backgroundColor = UIColor.white
+    }
 }
