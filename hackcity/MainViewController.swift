@@ -14,7 +14,10 @@ class MainViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.performSegue(withIdentifier: "mainviewmodal", sender: nil)
+
+        if Device.identifier == nil {
+            self.performSegue(withIdentifier: "mainviewmodal", sender: nil)
+        }
     }
     
     override func viewDidLoad() {

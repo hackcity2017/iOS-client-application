@@ -7,8 +7,15 @@
 //
 
 import UIKit
-import RealmSwift
 
-class Device: Object {
+class Device {
 
+    class var identifier: String? {
+        get {
+            return UserDefaults.standard.value(forKey: "identifier") as? String
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "identifier")
+        }
+    }
 }

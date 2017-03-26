@@ -41,6 +41,7 @@ class SignIdViewController: UIViewController {
                 switch response.result {
                 case .success:
                     print("Validation Successful")
+                    Device.identifier = id
                     DispatchQueue.main.async {
                         self.dismiss(animated: true, completion: nil)
                     }

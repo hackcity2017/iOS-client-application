@@ -50,11 +50,7 @@
                 <viewControllerPlaceholder storyboardName="SignId" id="MOC-a8-1Hu" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vae-nH-f1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
-            <point key="canvasLocation" x="646" y="54"/>
-=======
             <point key="canvasLocation" x="783" y="38"/>
->>>>>>> f8e570cdb8e95636e7dc64106b0cfdddfd3f2dac
         </scene>
     </scenes>
 </document>
