@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.4.0)
+  - JHChainableAnimations (2.0.1)
+  - Realm (2.4.4):
+    - Realm/Headers (= 2.4.4)
+  - Realm/Headers (2.4.4)
+  - RealmSwift (2.4.4):
+    - Realm (= 2.4.4)
+  - Socket.IO-Client-Swift (8.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - JHChainableAnimations
+  - RealmSwift
+  - Socket.IO-Client-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  JHChainableAnimations: a5bf80817412e79f9d14fff28d4b4e71ae94dfa3
+  Realm: 5a280a1f5a9a3c267bebf4f41ee47911137703d7
+  RealmSwift: 0c02b9f2d4be4301c497ed10e53a0580584eb1dd
+  Socket.IO-Client-Swift: 7ad3aded3c0f74d99555e950ac3aa82ca3eefbaf
+
+PODFILE CHECKSUM: be069a8a731144cd16dd994a883ea1003aeab25e
+
+COCOAPODS: 1.2.0
