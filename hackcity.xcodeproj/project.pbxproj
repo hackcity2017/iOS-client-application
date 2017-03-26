@@ -15,6 +15,11 @@
 		BBDDC1601E874D22004F70EE /* SignId.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBDDC15F1E874D22004F70EE /* SignId.storyboard */; };
 		BBDDC1631E874D68004F70EE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC1621E874D68004F70EE /* MainViewController.swift */; };
 		BBDDC1651E874D6E004F70EE /* SignIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC1641E874D6E004F70EE /* SignIdViewController.swift */; };
+		BBDDC16B1E874E68004F70EE /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBDDC16A1E874E68004F70EE /* HeaderView.xib */; };
+		BBDDC16D1E874E7C004F70EE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC16C1E874E7C004F70EE /* HeaderView.swift */; };
+		BBDDC1711E874F65004F70EE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC1701E874F65004F70EE /* MainViewModel.swift */; };
+		BBDDC1741E87534F004F70EE /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC1731E87534F004F70EE /* Device.swift */; };
+		BBDDC1761E876185004F70EE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC1751E876185004F70EE /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		BBDDC15F1E874D22004F70EE /* SignId.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignId.storyboard; sourceTree = "<group>"; };
 		BBDDC1621E874D68004F70EE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BBDDC1641E874D6E004F70EE /* SignIdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignIdViewController.swift; sourceTree = "<group>"; };
+		BBDDC16A1E874E68004F70EE /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		BBDDC16C1E874E7C004F70EE /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		BBDDC1701E874F65004F70EE /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		BBDDC1731E87534F004F70EE /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		BBDDC1751E876185004F70EE /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		BEE0F17D9A29372148B7CEC4 /* Pods-hackcity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackcity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackcity/Pods-hackcity.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +83,9 @@
 		BBDDC14C1E873F21004F70EE /* hackcity */ = {
 			isa = PBXGroup;
 			children = (
+				BBDDC1721E875345004F70EE /* Models */,
+				BBDDC16F1E874F5A004F70EE /* ViewModels */,
+				BBDDC1691E874E5E004F70EE /* Views */,
 				BBDDC1661E874D73004F70EE /* AppDelegate */,
 				BBDDC1611E874D52004F70EE /* ViewControllers */,
 				BBDDC1671E874D7D004F70EE /* Storyboards */,
@@ -115,6 +128,32 @@
 				BBDDC1591E873F21004F70EE /* Info.plist */,
 			);
 			name = Ressources;
+			sourceTree = "<group>";
+		};
+		BBDDC1691E874E5E004F70EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDC16A1E874E68004F70EE /* HeaderView.xib */,
+				BBDDC16C1E874E7C004F70EE /* HeaderView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		BBDDC16F1E874F5A004F70EE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDC1701E874F65004F70EE /* MainViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		BBDDC1721E875345004F70EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDC1731E87534F004F70EE /* Device.swift */,
+				BBDDC1751E876185004F70EE /* Alert.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		EDC41FEA9173037E722FB8FE /* Pods */ = {
@@ -190,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBDDC1581E873F21004F70EE /* LaunchScreen.storyboard in Resources */,
+				BBDDC16B1E874E68004F70EE /* HeaderView.xib in Resources */,
 				BBDDC1551E873F21004F70EE /* Assets.xcassets in Resources */,
 				BBDDC1601E874D22004F70EE /* SignId.storyboard in Resources */,
 				BBDDC1531E873F21004F70EE /* Main.storyboard in Resources */,
@@ -251,9 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBDDC1711E874F65004F70EE /* MainViewModel.swift in Sources */,
 				BBDDC14E1E873F21004F70EE /* AppDelegate.swift in Sources */,
 				BBDDC1651E874D6E004F70EE /* SignIdViewController.swift in Sources */,
+				BBDDC1741E87534F004F70EE /* Device.swift in Sources */,
 				BBDDC1631E874D68004F70EE /* MainViewController.swift in Sources */,
+				BBDDC16D1E874E7C004F70EE /* HeaderView.swift in Sources */,
+				BBDDC1761E876185004F70EE /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

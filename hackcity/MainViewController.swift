@@ -10,26 +10,30 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    let viewmodel = MainViewModel()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.viewmodel.delegate = self
+        self.viewmodel.startConnect()
+    }
+}
+
+extension MainViewController: MainViewModelDelegate {
+    func didConnectServer() {
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func didDisconnectServer() {
+
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func didMoveStart() {
+        self.view.backgroundColor = UIColor.green
     }
-    */
 
+    func didMoveEnd() {
+        self.view.backgroundColor = UIColor.white
+    }
 }
