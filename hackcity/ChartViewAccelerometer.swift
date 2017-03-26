@@ -1,5 +1,5 @@
 //
-//  ChartView.swift
+//  ChartViewAccelerometer.swift
 //  hackcity
 //
 //  Created by Remi Robert on 26/03/2017.
@@ -10,11 +10,9 @@ import UIKit
 import SwiftChart
 import SnapKit
 
-class ChartView: UIView {
+class ChartViewAccelerometer: UIView {
 
     private var valuesX = [Float]()
-    private var valuesY = [Float]()
-    private var valuesZ = [Float]()
     private var chart: Chart!
 
     override func awakeFromNib() {
@@ -22,8 +20,6 @@ class ChartView: UIView {
         self.backgroundColor = UIColor.clear
         for _ in 0...20 {
             valuesX.append(0)
-            valuesY.append(0)
-            valuesZ.append(0)
         }
     }
 
@@ -31,15 +27,7 @@ class ChartView: UIView {
         if valuesX.count > 20 {
             valuesX.removeFirst()
         }
-        if valuesY.count > 20 {
-            valuesY.removeFirst()
-        }
-        if valuesZ.count > 20 {
-            valuesZ.removeFirst()
-        }
         valuesX.append(Float(x))
-        valuesY.append(Float(y))
-        valuesZ.append(Float(z))
         self.configure()
     }
 
@@ -55,7 +43,7 @@ class ChartView: UIView {
         chart.xLabels = nil
         chart.yLabels = nil
         chart.minY = 0
-        chart.maxY = 10
+        chart.maxY = 5
         chart.labelFont = UIFont.boldSystemFont(ofSize: 0)
         self.addSubview(chart)
 
@@ -64,22 +52,12 @@ class ChartView: UIView {
         })
 
         let series1 = ChartSeries(valuesX)
-        series1.color = ChartColors.greenColor()
+        series1.color = ChartColors.greyColor()
         series1.area = true
-
-        let series2 = ChartSeries(valuesY)
-        series2.color = ChartColors.blueColor()
-        series2.area = true
-
-        let series3 = ChartSeries(valuesZ)
-        series3.color = ChartColors.redColor()
-        series3.area = true
 
         chart.removeAllSeries()
 
         chart.add(series1)
-        chart.add(series2)
-        chart.add(series3)
     }
 
     required init?(coder aDecoder: NSCoder) {

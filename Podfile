@@ -13,4 +13,5 @@ target 'hackcity' do
   pod "RateLimit"
   pod 'MKRingProgressView'
   pod "Timepiece"
+  pod 'FFToast'
 end

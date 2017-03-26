@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.4.0)
+  - FFToast (1.1.0)
   - JHChainableAnimations (2.0.1)
   - MKRingProgressView (1.1.2)
   - RateLimit (2.1.1)
@@ -15,6 +16,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - FFToast
   - JHChainableAnimations
   - MKRingProgressView
   - RateLimit
@@ -26,6 +28,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  FFToast: 219c16f69a05cc55d50e64d8d0fc3e0de68fc49f
   JHChainableAnimations: a5bf80817412e79f9d14fff28d4b4e71ae94dfa3
   MKRingProgressView: 4a02d3bc0699a459f5b4f691ca7c7ab7bc29b8f2
   RateLimit: 7fbf87b1bedabddb258f08230a6ece05b884d41f
@@ -36,6 +39,6 @@ SPEC CHECKSUMS:
   SwiftChart: 3e7482795bdb095234bc35835cc6666c8d5ebca1
   Timepiece: 4190a7bc5ae1c05c87531fd75b14e17d2a017902
 
-PODFILE CHECKSUM: d56a9ce247366c1c19bc17dd400e45f681f51860
+PODFILE CHECKSUM: 7ef5dff1b506ff12f0a66347dd0e3dd1165f0f6b
 
 COCOAPODS: 1.2.0

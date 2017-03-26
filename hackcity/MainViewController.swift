@@ -10,6 +10,8 @@ import UIKit
 import RateLimit
 import MKRingProgressView
 import Timepiece
+import FFToast
+
 
 class MainViewController: UIViewController {
 
@@ -26,6 +28,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var labelTime: UILabel!
     fileprivate var startDate: Date?
     fileprivate var count = 0
+    @IBOutlet weak var chartView2: ChartViewAccelerometer!
 
     private func configureUI() {
         self.chartView.configure()
@@ -69,6 +72,9 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.labelTime.text = nil
+        self.labelTime.isHidden = true
 
         self.title = "Stopped"
         self.viewmodel.delegate = self
@@ -120,6 +126,13 @@ extension MainViewController: UICollectionViewDataSource {
 
 extension MainViewController: MainViewModelDelegate {
 
+    func didUpdateAccelerometer(x: Double, y: Double, z: Double) {
+//        if x > 5 || y > 5 || z > 5 {
+//        }
+//        print("\(x), \(y), \(z)")
+//        self.chartView2.addValue(x: abs(y), y: abs(y), z: z)
+    }
+
     func didUpdateSumOfTime(sum: Int) {
         self.sumOfTime = sum
         self.collectionview.reloadData()
@@ -149,6 +162,7 @@ extension MainViewController: MainViewModelDelegate {
     }
 
     func didMoveStart() {
+        FFToast.show(withTitle: "Started moving", message: nil, iconImage: nil, duration: 2, toastType: FFToastType.info)
         self.startDate = Date()
         self.count = 0
         self.labelTime.isHidden = false
@@ -158,6 +172,7 @@ extension MainViewController: MainViewModelDelegate {
     }
 
     func didMoveEnd() {
+        FFToast.show(withTitle: "Stopped moving", message: nil, iconImage: nil, duration: 2, toastType: FFToastType.info)
         self.title = "Stopped"
         self.startDate = nil
         self.labelTime.isHidden = true

@@ -23,6 +23,6 @@ class StepsCollectionViewCell: UICollectionViewCell {
     }
 
     func configure(value: Double) {
-        self.stepsLabel.text = "\(value)"
+        self.stepsLabel.text = "\(value / 2)m"
     }
 }

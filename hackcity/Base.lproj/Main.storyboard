@@ -22,6 +22,10 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMH-Gk-pR5" customClass="ChartViewAccelerometer" customModule="hackcity" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbq-cj-2u7" customClass="ChartView" customModule="hackcity" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="269" width="375" height="334"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,13 +56,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="yMH-Gk-pR5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1rE-hp-bJp"/>
+                            <constraint firstItem="yMH-Gk-pR5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2xY-Rk-EoB"/>
                             <constraint firstItem="KLt-jg-CRe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="CLH-7r-uwW"/>
                             <constraint firstItem="KLt-jg-CRe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nvf-WE-gbi"/>
                             <constraint firstAttribute="trailing" secondItem="KLt-jg-CRe" secondAttribute="trailing" id="TDU-rh-Klk"/>
+                            <constraint firstAttribute="trailing" secondItem="yMH-Gk-pR5" secondAttribute="trailing" id="akf-uj-ls7"/>
                             <constraint firstItem="Nz8-Qg-zBb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="b0B-Dr-UnB"/>
                             <constraint firstItem="pbq-cj-2u7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jg1-Jy-0Ob"/>
                             <constraint firstAttribute="trailing" secondItem="pbq-cj-2u7" secondAttribute="trailing" id="m70-z7-dec"/>
                             <constraint firstItem="Nz8-Qg-zBb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mah-jt-vUi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yMH-Gk-pR5" secondAttribute="bottom" id="neT-zu-Lt3"/>
                             <constraint firstItem="KLt-jg-CRe" firstAttribute="top" secondItem="Nz8-Qg-zBb" secondAttribute="bottom" constant="8" id="opM-iU-7Th"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pbq-cj-2u7" secondAttribute="bottom" id="shy-he-h5G"/>
                             <constraint firstItem="Nz8-Qg-zBb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="uLR-SH-MxZ"/>
@@ -67,6 +75,7 @@
                     <navigationItem key="navigationItem" id="Xbc-Us-R3A"/>
                     <connections>
                         <outlet property="chartView" destination="pbq-cj-2u7" id="wYg-Se-F71"/>
+                        <outlet property="chartView2" destination="yMH-Gk-pR5" id="QIZ-qV-UKc"/>
                         <outlet property="collectionViewFlowLayout" destination="nBt-OK-9sb" id="eXz-oH-aEv"/>
                         <outlet property="collectionview" destination="KLt-jg-CRe" id="VCt-n1-mtH"/>
                         <outlet property="labelTime" destination="Nz8-Qg-zBb" id="xN9-ia-Wzs"/>

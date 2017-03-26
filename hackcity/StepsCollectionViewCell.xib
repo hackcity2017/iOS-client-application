@@ -37,7 +37,7 @@
                                     <constraint firstAttribute="height" constant="50" id="t8M-tA-0qZ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="steps count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lua-qu-4JQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance metter" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lua-qu-4JQ">
                                 <rect key="frame" x="66" y="153.5" width="244" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="92r-HJ-shp"/>

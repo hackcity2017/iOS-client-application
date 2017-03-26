@@ -31,6 +31,7 @@
 		BBDDC18A1E87B02E004F70EE /* StepsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBDDC1881E87B02E004F70EE /* StepsCollectionViewCell.xib */; };
 		BBDDC18D1E87D445004F70EE /* SumOfTimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC18B1E87D445004F70EE /* SumOfTimeCollectionViewCell.swift */; };
 		BBDDC18E1E87D445004F70EE /* SumOfTimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBDDC18C1E87D445004F70EE /* SumOfTimeCollectionViewCell.xib */; };
+		BBDDC1901E87DBDF004F70EE /* ChartViewAccelerometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC18F1E87DBDF004F70EE /* ChartViewAccelerometer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		BBDDC1881E87B02E004F70EE /* StepsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StepsCollectionViewCell.xib; sourceTree = "<group>"; };
 		BBDDC18B1E87D445004F70EE /* SumOfTimeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumOfTimeCollectionViewCell.swift; sourceTree = "<group>"; };
 		BBDDC18C1E87D445004F70EE /* SumOfTimeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SumOfTimeCollectionViewCell.xib; sourceTree = "<group>"; };
+		BBDDC18F1E87DBDF004F70EE /* ChartViewAccelerometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewAccelerometer.swift; sourceTree = "<group>"; };
 		BEE0F17D9A29372148B7CEC4 /* Pods-hackcity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackcity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackcity/Pods-hackcity.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +161,7 @@
 				BBDDC16A1E874E68004F70EE /* HeaderView.xib */,
 				BBDDC16C1E874E7C004F70EE /* HeaderView.swift */,
 				BBDDC1771E877487004F70EE /* ChartView.swift */,
+				BBDDC18F1E87DBDF004F70EE /* ChartViewAccelerometer.swift */,
 				BBDDC1791E8775D4004F70EE /* ChartView.xib */,
 				BBDDC17C1E878AAD004F70EE /* InformationsCollectionView.swift */,
 			);
@@ -340,6 +343,7 @@
 				BBDDC1711E874F65004F70EE /* MainViewModel.swift in Sources */,
 				BBDDC1811E8797D5004F70EE /* TemperatureCollectionViewCell.swift in Sources */,
 				BBDDC14E1E873F21004F70EE /* AppDelegate.swift in Sources */,
+				BBDDC1901E87DBDF004F70EE /* ChartViewAccelerometer.swift in Sources */,
 				BBDDC1651E874D6E004F70EE /* SignIdViewController.swift in Sources */,
 				BBDDC1741E87534F004F70EE /* Device.swift in Sources */,
 				BBDDC18D1E87D445004F70EE /* SumOfTimeCollectionViewCell.swift in Sources */,

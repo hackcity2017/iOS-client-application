@@ -17,6 +17,7 @@ protocol MainViewModelDelegate: class {
     func didUpdateInformations(temp: Double, hum: Double)
     func didupdateStepsCount(steps: Int)
     func didUpdateGiroscope(x: Double, y: Double, z: Double)
+    func didUpdateAccelerometer(x: Double, y: Double, z: Double)
     func didUpdateSumOfTime(sum: Int)
 }
 
@@ -56,8 +57,12 @@ class MainViewModel {
         socket.on("\(Device.identifier ?? "")-alert-update") {data, ack in
             guard let json = data[0] as? [String:AnyObject] else {return}
             guard let informations = json["update"] as? [String:AnyObject] else {return}
-            guard let x = informations["x"] as? String, let y = informations["y"] as? String, let z = informations["z"] as? String else {return}
-            self.delegate?.didUpdateGiroscope(x: Double(x) ?? 0, y: Double(y) ?? 0, z: Double(z) ?? 0)
+            if let x = informations["x"] as? String, let y = informations["y"] as? String, let z = informations["z"] as? String {
+                self.delegate?.didUpdateGiroscope(x: Double(x) ?? 0, y: Double(y) ?? 0, z: Double(z) ?? 0)
+            }
+            if let x = informations["x1"] as? String, let y = informations["x2"] as? String, let z = informations["x3"] as? String {
+                self.delegate?.didUpdateAccelerometer(x: Double(x) ?? 0, y: Double(y) ?? 0, z: Double(z) ?? 0)
+            }
         }
 
         socket.on("\(Device.identifier ?? "")-alert-stop") {data, ack in
