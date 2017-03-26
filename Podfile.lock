@@ -1,26 +1,41 @@
 PODS:
   - Alamofire (4.4.0)
   - JHChainableAnimations (2.0.1)
+  - MKRingProgressView (1.1.2)
+  - RateLimit (2.1.1)
   - Realm (2.4.4):
     - Realm/Headers (= 2.4.4)
   - Realm/Headers (2.4.4)
   - RealmSwift (2.4.4):
     - Realm (= 2.4.4)
+  - SnapKit (3.2.0)
   - Socket.IO-Client-Swift (8.3.0)
+  - SwiftChart (0.4.0)
+  - Timepiece (1.1.0)
 
 DEPENDENCIES:
   - Alamofire
   - JHChainableAnimations
+  - MKRingProgressView
+  - RateLimit
   - RealmSwift
+  - SnapKit
   - Socket.IO-Client-Swift
+  - SwiftChart
+  - Timepiece
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   JHChainableAnimations: a5bf80817412e79f9d14fff28d4b4e71ae94dfa3
+  MKRingProgressView: 4a02d3bc0699a459f5b4f691ca7c7ab7bc29b8f2
+  RateLimit: 7fbf87b1bedabddb258f08230a6ece05b884d41f
   Realm: 5a280a1f5a9a3c267bebf4f41ee47911137703d7
   RealmSwift: 0c02b9f2d4be4301c497ed10e53a0580584eb1dd
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   Socket.IO-Client-Swift: 7ad3aded3c0f74d99555e950ac3aa82ca3eefbaf
+  SwiftChart: 3e7482795bdb095234bc35835cc6666c8d5ebca1
+  Timepiece: 4190a7bc5ae1c05c87531fd75b14e17d2a017902
 
-PODFILE CHECKSUM: be069a8a731144cd16dd994a883ea1003aeab25e
+PODFILE CHECKSUM: d56a9ce247366c1c19bc17dd400e45f681f51860
 
 COCOAPODS: 1.2.0

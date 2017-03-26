@@ -10,5 +10,9 @@ import UIKit
 import RealmSwift
 
 class Alert: Object {
+    dynamic var id: String = NSUUID().uuidString
+    dynamic var date = Date()
+    dynamic var value: Int = 0
 
+    override class func primaryKey() -> String? { return "id" }
 }

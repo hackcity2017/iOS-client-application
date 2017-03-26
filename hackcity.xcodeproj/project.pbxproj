@@ -20,6 +20,17 @@
 		BBDDC1711E874F65004F70EE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC1701E874F65004F70EE /* MainViewModel.swift */; };
 		BBDDC1741E87534F004F70EE /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC1731E87534F004F70EE /* Device.swift */; };
 		BBDDC1761E876185004F70EE /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC1751E876185004F70EE /* Alert.swift */; };
+		BBDDC1781E877487004F70EE /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC1771E877487004F70EE /* ChartView.swift */; };
+		BBDDC17A1E8775D4004F70EE /* ChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBDDC1791E8775D4004F70EE /* ChartView.xib */; };
+		BBDDC17D1E878AAD004F70EE /* InformationsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC17C1E878AAD004F70EE /* InformationsCollectionView.swift */; };
+		BBDDC1811E8797D5004F70EE /* TemperatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC17F1E8797D5004F70EE /* TemperatureCollectionViewCell.swift */; };
+		BBDDC1821E8797D5004F70EE /* TemperatureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBDDC1801E8797D5004F70EE /* TemperatureCollectionViewCell.xib */; };
+		BBDDC1851E879A42004F70EE /* HumidityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC1831E879A42004F70EE /* HumidityCollectionViewCell.swift */; };
+		BBDDC1861E879A42004F70EE /* HumidityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBDDC1841E879A42004F70EE /* HumidityCollectionViewCell.xib */; };
+		BBDDC1891E87B02E004F70EE /* StepsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC1871E87B02E004F70EE /* StepsCollectionViewCell.swift */; };
+		BBDDC18A1E87B02E004F70EE /* StepsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBDDC1881E87B02E004F70EE /* StepsCollectionViewCell.xib */; };
+		BBDDC18D1E87D445004F70EE /* SumOfTimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDDC18B1E87D445004F70EE /* SumOfTimeCollectionViewCell.swift */; };
+		BBDDC18E1E87D445004F70EE /* SumOfTimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBDDC18C1E87D445004F70EE /* SumOfTimeCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +50,17 @@
 		BBDDC1701E874F65004F70EE /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		BBDDC1731E87534F004F70EE /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		BBDDC1751E876185004F70EE /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		BBDDC1771E877487004F70EE /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		BBDDC1791E8775D4004F70EE /* ChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartView.xib; sourceTree = "<group>"; };
+		BBDDC17C1E878AAD004F70EE /* InformationsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationsCollectionView.swift; sourceTree = "<group>"; };
+		BBDDC17F1E8797D5004F70EE /* TemperatureCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureCollectionViewCell.swift; sourceTree = "<group>"; };
+		BBDDC1801E8797D5004F70EE /* TemperatureCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemperatureCollectionViewCell.xib; sourceTree = "<group>"; };
+		BBDDC1831E879A42004F70EE /* HumidityCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HumidityCollectionViewCell.swift; sourceTree = "<group>"; };
+		BBDDC1841E879A42004F70EE /* HumidityCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HumidityCollectionViewCell.xib; sourceTree = "<group>"; };
+		BBDDC1871E87B02E004F70EE /* StepsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsCollectionViewCell.swift; sourceTree = "<group>"; };
+		BBDDC1881E87B02E004F70EE /* StepsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StepsCollectionViewCell.xib; sourceTree = "<group>"; };
+		BBDDC18B1E87D445004F70EE /* SumOfTimeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumOfTimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		BBDDC18C1E87D445004F70EE /* SumOfTimeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SumOfTimeCollectionViewCell.xib; sourceTree = "<group>"; };
 		BEE0F17D9A29372148B7CEC4 /* Pods-hackcity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackcity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackcity/Pods-hackcity.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,8 +155,12 @@
 		BBDDC1691E874E5E004F70EE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BBDDC17E1E8797C4004F70EE /* Cells */,
 				BBDDC16A1E874E68004F70EE /* HeaderView.xib */,
 				BBDDC16C1E874E7C004F70EE /* HeaderView.swift */,
+				BBDDC1771E877487004F70EE /* ChartView.swift */,
+				BBDDC1791E8775D4004F70EE /* ChartView.xib */,
+				BBDDC17C1E878AAD004F70EE /* InformationsCollectionView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -154,6 +180,21 @@
 				BBDDC1751E876185004F70EE /* Alert.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		BBDDC17E1E8797C4004F70EE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BBDDC17F1E8797D5004F70EE /* TemperatureCollectionViewCell.swift */,
+				BBDDC1801E8797D5004F70EE /* TemperatureCollectionViewCell.xib */,
+				BBDDC1831E879A42004F70EE /* HumidityCollectionViewCell.swift */,
+				BBDDC1841E879A42004F70EE /* HumidityCollectionViewCell.xib */,
+				BBDDC1871E87B02E004F70EE /* StepsCollectionViewCell.swift */,
+				BBDDC1881E87B02E004F70EE /* StepsCollectionViewCell.xib */,
+				BBDDC18B1E87D445004F70EE /* SumOfTimeCollectionViewCell.swift */,
+				BBDDC18C1E87D445004F70EE /* SumOfTimeCollectionViewCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		EDC41FEA9173037E722FB8FE /* Pods */ = {
@@ -231,8 +272,13 @@
 				BBDDC1581E873F21004F70EE /* LaunchScreen.storyboard in Resources */,
 				BBDDC16B1E874E68004F70EE /* HeaderView.xib in Resources */,
 				BBDDC1551E873F21004F70EE /* Assets.xcassets in Resources */,
+				BBDDC1861E879A42004F70EE /* HumidityCollectionViewCell.xib in Resources */,
+				BBDDC17A1E8775D4004F70EE /* ChartView.xib in Resources */,
 				BBDDC1601E874D22004F70EE /* SignId.storyboard in Resources */,
+				BBDDC18E1E87D445004F70EE /* SumOfTimeCollectionViewCell.xib in Resources */,
 				BBDDC1531E873F21004F70EE /* Main.storyboard in Resources */,
+				BBDDC1821E8797D5004F70EE /* TemperatureCollectionViewCell.xib in Resources */,
+				BBDDC18A1E87B02E004F70EE /* StepsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,12 +338,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBDDC1711E874F65004F70EE /* MainViewModel.swift in Sources */,
+				BBDDC1811E8797D5004F70EE /* TemperatureCollectionViewCell.swift in Sources */,
 				BBDDC14E1E873F21004F70EE /* AppDelegate.swift in Sources */,
 				BBDDC1651E874D6E004F70EE /* SignIdViewController.swift in Sources */,
 				BBDDC1741E87534F004F70EE /* Device.swift in Sources */,
+				BBDDC18D1E87D445004F70EE /* SumOfTimeCollectionViewCell.swift in Sources */,
 				BBDDC1631E874D68004F70EE /* MainViewController.swift in Sources */,
+				BBDDC1851E879A42004F70EE /* HumidityCollectionViewCell.swift in Sources */,
 				BBDDC16D1E874E7C004F70EE /* HeaderView.swift in Sources */,
 				BBDDC1761E876185004F70EE /* Alert.swift in Sources */,
+				BBDDC1781E877487004F70EE /* ChartView.swift in Sources */,
+				BBDDC1891E87B02E004F70EE /* StepsCollectionViewCell.swift in Sources */,
+				BBDDC17D1E878AAD004F70EE /* InformationsCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

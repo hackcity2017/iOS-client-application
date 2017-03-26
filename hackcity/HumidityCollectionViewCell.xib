@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HumidityCollectionViewCell" customModule="hackcity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="276" height="290"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="276" height="290"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLQ-ZN-99k">
+                        <rect key="frame" x="15" y="15" width="246" height="260"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="q1P-Ii-5yp">
+                                <rect key="frame" x="66" y="105" width="172" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5Co-xc-GWg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="humidity" translatesAutoresizingMaskIntoConstraints="NO" id="2BA-Uc-lJU">
+                                <rect key="frame" x="8" y="105" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1dM-H8-Ka4"/>
+                                    <constraint firstAttribute="width" constant="50" id="yLI-pV-3EQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="humidity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctK-Q1-Y5f">
+                                <rect key="frame" x="66" y="150" width="172" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wDf-T0-WL7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="q1P-Ii-5yp" secondAttribute="trailing" constant="8" id="4cq-OF-Qjh"/>
+                            <constraint firstItem="q1P-Ii-5yp" firstAttribute="leading" secondItem="2BA-Uc-lJU" secondAttribute="trailing" constant="8" id="Jug-SX-MFI"/>
+                            <constraint firstItem="ctK-Q1-Y5f" firstAttribute="leading" secondItem="2BA-Uc-lJU" secondAttribute="trailing" constant="8" id="epJ-5p-FtQ"/>
+                            <constraint firstItem="q1P-Ii-5yp" firstAttribute="centerY" secondItem="PLQ-ZN-99k" secondAttribute="centerY" id="fg7-Tx-Bs6"/>
+                            <constraint firstItem="ctK-Q1-Y5f" firstAttribute="top" secondItem="q1P-Ii-5yp" secondAttribute="bottom" constant="-5" id="hNX-e9-DTA"/>
+                            <constraint firstAttribute="trailing" secondItem="ctK-Q1-Y5f" secondAttribute="trailing" constant="8" id="nXU-wT-hu8"/>
+                            <constraint firstItem="2BA-Uc-lJU" firstAttribute="centerY" secondItem="PLQ-ZN-99k" secondAttribute="centerY" id="plG-kN-sIQ"/>
+                            <constraint firstItem="2BA-Uc-lJU" firstAttribute="leading" secondItem="PLQ-ZN-99k" secondAttribute="leading" constant="8" id="xaX-qn-pXo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PLQ-ZN-99k" secondAttribute="bottom" constant="15" id="ElW-Sc-4Nc"/>
+                <constraint firstAttribute="trailing" secondItem="PLQ-ZN-99k" secondAttribute="trailing" constant="15" id="cMv-uc-jSW"/>
+                <constraint firstItem="PLQ-ZN-99k" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="ooM-Ez-5XH"/>
+                <constraint firstItem="PLQ-ZN-99k" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="uh3-EH-5iN"/>
+            </constraints>
+            <size key="customSize" width="276" height="290"/>
+            <connections>
+                <outlet property="containerView" destination="PLQ-ZN-99k" id="wCd-Cc-AZW"/>
+                <outlet property="humidityLabel" destination="q1P-Ii-5yp" id="UE9-4X-CJZ"/>
+            </connections>
+            <point key="canvasLocation" x="-145" y="22"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="humidity" width="40" height="40"/>
+    </resources>
+</document>

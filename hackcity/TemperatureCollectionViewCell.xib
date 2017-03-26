@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TemperatureCollectionViewCell" customModule="hackcity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="257" height="266"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="257" height="266"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wsp-Ep-ch5">
+                        <rect key="frame" x="15" y="15" width="227" height="236"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bnP-rN-SS3">
+                                <rect key="frame" x="66" y="93" width="161" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JaK-5K-hQw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temperature" translatesAutoresizingMaskIntoConstraints="NO" id="e7O-Hz-3xM">
+                                <rect key="frame" x="8" y="93" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="A2n-4q-WZm"/>
+                                    <constraint firstAttribute="height" constant="50" id="jMg-Sp-Bvj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGI-94-5uu">
+                                <rect key="frame" x="66" y="135" width="157" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="jc0-fd-z7j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wGI-94-5uu" firstAttribute="top" secondItem="bnP-rN-SS3" secondAttribute="bottom" constant="-8" id="1xc-wT-0yv"/>
+                            <constraint firstAttribute="trailing" secondItem="bnP-rN-SS3" secondAttribute="trailing" id="B9s-wq-Yub"/>
+                            <constraint firstAttribute="trailing" secondItem="wGI-94-5uu" secondAttribute="trailing" constant="4" id="Ekm-mU-f0S"/>
+                            <constraint firstItem="bnP-rN-SS3" firstAttribute="centerY" secondItem="Wsp-Ep-ch5" secondAttribute="centerY" id="LUl-vP-59D"/>
+                            <constraint firstItem="wGI-94-5uu" firstAttribute="leading" secondItem="e7O-Hz-3xM" secondAttribute="leading" constant="58" id="RNp-wJ-I0R"/>
+                            <constraint firstItem="bnP-rN-SS3" firstAttribute="leading" secondItem="e7O-Hz-3xM" secondAttribute="trailing" constant="8" id="a6O-om-rNP"/>
+                            <constraint firstItem="e7O-Hz-3xM" firstAttribute="centerY" secondItem="Wsp-Ep-ch5" secondAttribute="centerY" id="iB3-7a-hx2"/>
+                            <constraint firstItem="e7O-Hz-3xM" firstAttribute="leading" secondItem="Wsp-Ep-ch5" secondAttribute="leading" constant="8" id="mUk-UV-E2V"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Wsp-Ep-ch5" secondAttribute="bottom" constant="15" id="5BX-c1-OqM"/>
+                <constraint firstItem="Wsp-Ep-ch5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="BpF-0n-R5X"/>
+                <constraint firstAttribute="trailing" secondItem="Wsp-Ep-ch5" secondAttribute="trailing" constant="15" id="CHJ-ua-ok1"/>
+                <constraint firstItem="Wsp-Ep-ch5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="T0z-Ry-lbh"/>
+            </constraints>
+            <size key="customSize" width="257" height="266"/>
+            <connections>
+                <outlet property="containerView" destination="Wsp-Ep-ch5" id="nK5-cT-NIf"/>
+                <outlet property="temperatureCell" destination="bnP-rN-SS3" id="hTe-f4-6SE"/>
+            </connections>
+            <point key="canvasLocation" x="-149.5" y="51"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="temperature" width="48" height="48"/>
+    </resources>
+</document>

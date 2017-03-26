@@ -8,4 +8,9 @@ target 'hackcity' do
   pod 'Alamofire'
   pod 'Socket.IO-Client-Swift'
   pod 'JHChainableAnimations'
+  pod 'SwiftChart'
+  pod 'SnapKit'
+  pod "RateLimit"
+  pod 'MKRingProgressView'
+  pod "Timepiece"
 end
